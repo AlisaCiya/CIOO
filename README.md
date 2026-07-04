@@ -1,4 +1,4 @@
-# CIOO
+# Class-Incremental Object Detection via Prototype Inversion and Distribution Re-balancing
 CIOD resourse
 ## Dataset Format
 
