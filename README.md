@@ -2,9 +2,11 @@
 CIOD resourse
 ## Dataset Format
 
-All datasets in this project follow the **YOLO format**.
+All datasets in this project should be converted to the **YOLO format** before training.
 
-Each dataset should be organized as follows:
+For datasets such as **VOC** and **COCO**, please convert the original annotations to YOLO-format labels first.
+
+The expected directory structure is:
 
 ```text
 <dataset_name>/
@@ -16,4 +18,24 @@ Each dataset should be organized as follows:
     └── val/
 ```
 
-Replace `<dataset_name>` with the actual dataset name (e.g., `VOC`, `COCO`, `VisDrone`).
+For example:
+
+```text
+VOC/
+├── images/
+│   ├── train/
+│   └── val/
+└── labels/
+    ├── train/
+    └── val/
+```
+
+```text
+COCO/
+├── images/
+│   ├── train/
+│   └── val/
+└── labels/
+    ├── train/
+    └── val/
+```
