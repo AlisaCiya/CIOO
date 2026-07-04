@@ -1,11 +1,13 @@
 # CIOO
 CIOD resourse
-## Dataset Structure
+## Dataset Format
 
-### VOC
+All datasets in this project follow the **YOLO format**.
+
+Each dataset should be organized as follows:
 
 ```text
-VOC/
+<dataset_name>/
 ├── images/
 │   ├── train/
 │   └── val/
@@ -14,9 +16,4 @@ VOC/
     └── val/
 ```
 
-| Directory | Description |
-|-----------|-------------|
-| `images/train/` | Training images |
-| `images/val/` | Validation images |
-| `labels/train/` | Training annotations |
-| `labels/val/` | Validation annotations |
+Replace `<dataset_name>` with the actual dataset name (e.g., `VOC`, `COCO`, `VisDrone`).
